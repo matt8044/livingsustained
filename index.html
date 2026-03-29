@@ -243,10 +243,58 @@
       color: var(--mid-gray);
     }
 
+    .product-highlight {
+      display: grid;
+      grid-template-columns: 1.1fr 0.9fr;
+      gap: 22px;
+      align-items: stretch;
+    }
+
     .coming-soon {
       display: grid;
       grid-template-columns: 1fr 1fr;
       gap: 22px;
+    }
+
+    .product-badge {
+      display: inline-block;
+      padding: 7px 12px;
+      border-radius: 999px;
+      background: rgba(23, 167, 224, 0.12);
+      color: #0c6d92;
+      font-size: 0.86rem;
+      font-weight: 700;
+      margin-bottom: 14px;
+    }
+
+    .product-list {
+      margin: 18px 0 0;
+      padding-left: 18px;
+      color: var(--mid-gray);
+    }
+
+    .product-list li {
+      margin-bottom: 10px;
+    }
+
+    .quote-card {
+      background: linear-gradient(180deg, rgba(23, 167, 224, 0.08) 0%, rgba(103, 197, 28, 0.08) 100%);
+      border: 1px solid rgba(0, 0, 0, 0.06);
+      border-radius: 24px;
+      padding: 28px;
+      box-shadow: 0 14px 40px rgba(0, 0, 0, 0.05);
+    }
+
+    .quote-card blockquote {
+      margin: 0 0 18px;
+      font-size: 1.18rem;
+      line-height: 1.45;
+      letter-spacing: -0.2px;
+    }
+
+    .quote-card p {
+      margin: 0;
+      color: var(--mid-gray);
     }
 
     .list {
@@ -302,6 +350,7 @@
     @media (max-width: 920px) {
       .hero-grid,
       .three-up,
+      .product-highlight,
       .coming-soon {
         grid-template-columns: 1fr;
       }
@@ -332,6 +381,13 @@
       }
     }
   </style>
+  <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+  <link rel="icon" href="favicon.ico">
+  <link rel="manifest" href="site.webmanifest">
+  <link rel="icon" type="image/png" sizes="192x192" href="android-chrome-192x192.png">
+  <link rel="icon" type="image/png" sizes="512x512" href="android-chrome-512x512.png">
 </head>
 <body>
   <header>
@@ -342,20 +398,11 @@
       </div>
       <nav class="nav-links">
         <a href="#about">About</a>
+        <a href="#power">Portable Power</a>
         <a href="#approach">Approach</a>
         <a href="#coming-soon">Coming Soon</a>
       </nav>
     </div>
-    
-    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
-    <link rel="icon" href="favicon.ico">
-    <link rel="manifest" href="site.webmanifest">
-    <!-- Android / Chrome -->
-    <link rel="icon" type="image/png" sizes="192x192" href="android-chrome-192x192.png">
-    <link rel="icon" type="image/png" sizes="512x512" href="android-chrome-512x512.png">
-    
   </header>
 
   <main>
@@ -408,6 +455,45 @@
             <div class="feature-number">3</div>
             <h3>Long-term mindset</h3>
             <p>Fewer disposable choices. More durable systems. A calmer, more capable way to live over time.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="power">
+      <div class="container">
+        <div class="section-heading">
+          <h2>Simple backup power for your home</h2>
+          <p>
+            Most homes do not need a full solar installation to be better prepared. A simple portable power station can keep your WiFi, phones, laptop, and basic lighting running when the grid goes down.
+          </p>
+        </div>
+
+        <div class="product-highlight">
+          <div class="feature">
+            <div class="product-badge">Recommended starting point</div>
+            <h3>EcoFlow River 2</h3>
+            <p>
+              This is the kind of product we like as an entry point because it feels approachable, looks good in a home, and gives you immediate backup capability without installation or technical complexity.
+            </p>
+            <ul class="product-list">
+              <li>Simple plug-and-play setup</li>
+              <li>Clean, modern design that feels at home indoors</li>
+              <li>Fast charging and easy day-to-day usability</li>
+              <li>Strong fit for WiFi, phones, laptops, and lighting during outages</li>
+            </ul>
+            <div class="hero-actions" style="margin-top: 24px; margin-bottom: 0;">
+              <a class="button button-primary" href="#coming-soon">See upcoming product updates</a>
+            </div>
+          </div>
+
+          <div class="quote-card">
+            <blockquote>
+              “Most people do not need a full backup system. They just need a simple way to stay connected and comfortable during an outage.”
+            </blockquote>
+            <p>
+              Living Sustained is focused on products that reduce complexity and build practical resilience. Portable power is a strong example: useful in an emergency, but also clean, flexible, and easy to live with every day.
+            </p>
           </div>
         </div>
       </div>
